@@ -1,0 +1,20 @@
+{
+    "include": ["src"],
+    "exclude": ["node_modules/**"],
+    "compilerOptions": {
+      "allowImportingTsExtensions": true,
+      "module": "ES2022",
+      "target": "ES2022",
+      "moduleResolution": "Node",
+      "lib": ["dom", "esnext"],
+      "rootDir": "./src",
+      "jsx": "react",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "noEmit": true
+    },
+    // https://stackoverflow.com/questions/51610583/ts-node-ignores-d-ts-files-while-tsc-successfully-compiles-the-project
+    "ts-node": {
+      "files": true
+    }
+  }
